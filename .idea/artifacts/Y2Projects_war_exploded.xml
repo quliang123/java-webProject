@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Y2Projects:war exploded">
+    <output-path>$PROJECT_DIR$/target/Y2Projects</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Y2Projects" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.42" />
+          <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.6" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.5" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.3" />
+          <element id="library" level="project" name="Maven: redis.clients:jedis:2.1.0" />
+          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.5" />
+          <element id="library" level="project" name="Maven: org.webjars.bower:jquery:2.0.3" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+          <element id="library" level="project" name="Maven: junit:junit:4.12" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/Y2Projects/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Y2Projects/web/Web" />
+    </root>
+  </artifact>
+</component>
