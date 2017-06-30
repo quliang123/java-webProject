@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MyBatis" />
+        <module name="MyBatisProject" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="MyBatis" target="1.5" />
+      <module name="MyBatisProject" target="1.8" />
       <module name="Y2Projects" target="1.5" />
     </bytecodeTargetLevel>
   </component>

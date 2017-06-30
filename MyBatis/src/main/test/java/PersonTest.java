@@ -29,7 +29,6 @@ public class PersonTest {
         @Test
        public  void queryById(){
             sqlSession=MybatisUtil.getSqlSession();
-
             try {
                 Person person =sqlSession.selectOne("queryById",1);
                 sqlSession.commit();
@@ -39,7 +38,6 @@ public class PersonTest {
             } finally {
                 MybatisUtil.closeSession(sqlSession);
             }
-
         }
 
 

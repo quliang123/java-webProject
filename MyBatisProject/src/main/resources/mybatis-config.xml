@@ -3,7 +3,19 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
+
     <properties resource="config.properties"/>
+
+    <!--<setting name="cacheEnabled" value="true" />
+            &lt;!&ndash; 打印sql日志 &ndash;&gt;
+            <setting name="logImpl" value="STDOUT_LOGGING" />
+        </settings>-->
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
     <typeAliases>
         <typeAlias type="model.Person" alias="Person"/>
     </typeAliases>
@@ -19,8 +31,10 @@
             </dataSource>
         </environment>
     </environments>
+
     <mappers>
         <mapper resource="mapper/Person.xml"/>
     </mappers>
-</configuration>
 
+
+</configuration>
