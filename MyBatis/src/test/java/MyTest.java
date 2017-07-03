@@ -11,6 +11,7 @@ import java.util.List;
 
 /**
  * Created by 123 on 2017/07/03.
+ *因为重写了toString()方法，所以可以直接打印出来数据
  */
 public class MyTest {
     SqlSession sqlSession;

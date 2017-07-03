@@ -1,32 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44836ae5-2100-4a61-92ef-dd5838ddb8ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyBatis/src/main/java/dao/StudentDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyBatis/src/main/java/dao/StudentDao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyBatis/src/main/java/model/Dog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyBatis/src/main/java/model/Student.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyBatis/src/test/java/MyTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyBatisProject/src/main/java/dao/PersonDAO.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBatis/src/main/java/model/Person.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBatis/src/main/resources/mapper/Person.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBatis/src/main/test/java/PersonTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MyBatisProject/src/main/java/dao/Impl/IPersonDAOImpl.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="44836ae5-2100-4a61-92ef-dd5838ddb8ed" name="Default" comment="整个y2的所有项目">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatis/MyBatis.iml" afterPath="$PROJECT_DIR$/MyBatis/MyBatis.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatis/pom.xml" afterPath="$PROJECT_DIR$/MyBatis/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatis/src/main/java/utils/MybatisUtil.java" afterPath="$PROJECT_DIR$/MyBatis/src/main/java/utils/MybatisUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatis/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/MyBatis/src/main/resources/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatis/src/main/resources/log4.properties" afterPath="$PROJECT_DIR$/MyBatis/src/main/resources/log4.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatis/src/main/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/MyBatis/src/main/resources/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatisProject/src/main/java/dao/IPersonDAO.java" afterPath="$PROJECT_DIR$/MyBatisProject/src/main/java/dao/IPersonDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatisProject/src/main/java/model/Person.java" afterPath="$PROJECT_DIR$/MyBatisProject/src/main/java/model/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatisProject/src/main/resources/mapper/Person.xml" afterPath="$PROJECT_DIR$/MyBatisProject/src/main/resources/mapper/Person.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatisProject/src/main/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/MyBatisProject/src/main/resources/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatisProject/src/test/java/PersonTest.java" afterPath="$PROJECT_DIR$/MyBatisProject/src/test/java/PersonTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBatis/src/test/java/MyTest.java" afterPath="$PROJECT_DIR$/MyBatis/src/test/java/MyTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,8 +43,8 @@
       <file leaf-file-name="MyTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyBatis/src/test/java/MyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+            <state relative-caret-position="114">
+              <caret line="13" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -320,10 +297,6 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -344,32 +317,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Y2Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Y2Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBatis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1187,7 +1134,7 @@
       <workItem from="1498955125054" duration="1398000" />
       <workItem from="1498983500074" duration="37000" />
       <workItem from="1498987963027" duration="3430000" />
-      <workItem from="1499042340864" duration="15830000" />
+      <workItem from="1499042340864" duration="15966000" />
     </task>
     <task id="LOCAL-00001" summary="整个y2的所有项目">
       <created>1498269832840</created>
@@ -1259,7 +1206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498820478190</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="整个y2的所有项目">
+      <created>1499072722997</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1499072722997</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1295,7 +1249,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133109000" />
+    <option name="totallyTimeSpent" value="133245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1332,8 +1286,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.48922414" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2572759" sideWeight="0.47396964" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4202561" sideWeight="0.47737068" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2572759" sideWeight="0.47396964" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4202561" sideWeight="0.47737068" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.49568966" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24432433" sideWeight="0.47643098" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1819,8 +1773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyBatis/src/test/java/MyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        <state relative-caret-position="114">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
