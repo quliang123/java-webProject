@@ -9,6 +9,7 @@
         <module>MyBatis</module>
         <module>MyBatisProject</module>
         <module>MyBatisProject</module>
+        <module>MyBatis</module>
     </modules>
     <name>Y2Projects Maven Webapp</name>
     <url>http://maven.apache.org</url>

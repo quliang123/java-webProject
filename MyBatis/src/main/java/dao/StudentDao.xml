@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.StudentDao">
+    <!-- 1、如果数据库列名和实体类中的属性名不相同采用resultMap -->
+    <!--manyuser是下面resultMap节点的id -->
+    <select id="getStu" resultMap="allUser">
+        SELECT * from student
+    </select>
+    <resultMap id="allUser" type="stu">
+        <!--  <id column="myid" property="id"></id>-->
+        <id column="myid" property="id"></id>
+        <result column="name" property="name"/>
+    </resultMap>
+
+
+    <!-- 2.按学生姓名模糊查询学生对象-->
+    <select id="likeName" resultType="map" parameterType="String">
+        SELECT  * FROM  student  WHERE  NAME LIKE concat('%',#{name},'%')
+    </select>
+
+    <resultMap id="likeName" type="stu">
+        <id column="myid" property="id"></id>
+        <result column="name" property="name"/>
+    </resultMap>
+
+
+    <!-- 3.同一id下的宠物-->
+    <select id="getDog" resultMap="manyDog">
+       select * from  student,dog where student.myid=dog.stuid
+  </select>
+
+    <resultMap id="manyDog" type="dog">
+        <id column="id" property="id"/>
+        <result column="dogname" property="name"/>
+        <collection property="students" column="stuid" ofType="stu">
+            <id column="myid" property="id"></id>
+            <result column="name" property="name"></result>
+        </collection>
+    </resultMap>
+
+
+</mapper>

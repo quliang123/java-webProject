@@ -4,20 +4,12 @@ package model;
  * Created by 123 on 2017/06/29.
  */
 public class Person {
-    private int id;
-    private String userName;
-    private int age;
-    private String mobilePhone;
-
-    public Person() {
-        this.id = id;
-        this.userName = userName;
-        this.age = age;
-        this.mobilePhone = mobilePhone;
-    }
+private  int id;
+private String username;
+private int age;
+private int mobilePhone;
 
     public int getId() {
-
         return id;
     }
 
@@ -25,12 +17,12 @@ public class Person {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public int getAge() {
@@ -41,11 +33,11 @@ public class Person {
         this.age = age;
     }
 
-    public String getMobilePhone() {
+    public int getMobilePhone() {
         return mobilePhone;
     }
 
-    public void setMobilePhone(String mobilePhone) {
+    public void setMobilePhone(int mobilePhone) {
         this.mobilePhone = mobilePhone;
     }
 }

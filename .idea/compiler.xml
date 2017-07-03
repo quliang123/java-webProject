@@ -10,10 +10,13 @@
         <module name="MyBatisProject" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="MyBatis" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="MyBatis" target="1.8" />
       <module name="MyBatisProject" target="1.8" />
-      <module name="Y2Projects" target="1.5" />
+      <module name="Y2Projects" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
   </component>
 </project>

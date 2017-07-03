@@ -4,8 +4,18 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <properties resource="config.properties"/>
+    <!--<setting name="cacheEnabled" value="true" />
+            &lt;!&ndash; 打印sql日志 &ndash;&gt;
+            <setting name="logImpl" value="STDOUT_LOGGING" />
+        </settings>-->
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
     <typeAliases>
-        <typeAlias type="model.Person" alias="Person"/>
+        <typeAlias type="model.Student" alias="stu"/>
+        <typeAlias type="model.Dog" alias="dog"/>
     </typeAliases>
 
     <environments default="development">
@@ -19,8 +29,8 @@
             </dataSource>
         </environment>
     </environments>
+
     <mappers>
-        <mapper resource="mapper/Person.xml"/>
+        <mapper resource="dao/StudentDao.xml"/>
     </mappers>
 </configuration>
-
