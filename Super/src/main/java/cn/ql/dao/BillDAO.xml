@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ql.dao.IBillDAO">
+    <!--获取各种组合条件的统计-->
+    <select id="getBillCount" resultType="int">
+        select COUNT(1) from smbms_bill,smbms_provider
+        <where>
+            <if test="productName!=null">
+                AND productName like concat('%',#{productName},'%')
+            </if>
+            <if test="isPayment!=null and isPayment==1 || isPayment==0 ">
+                AND isPayment = #{isPayment}
+            </if>
+            <if test="proName!=null">
+                AND smbms_provider.`id`
+                in (select id from smbms_bill where smbms_provider.`proName`=#{proName})
+            </if>
+        </where>
+    </select>
+
+
+    <!--模糊查询 -->
+    <resultMap id="billMapper" type="smbms_bill">
+        <id column="id" property="id"></id>
+        <association column="id" property="provider" javaType="cn.ql.model.smbms_provider">
+            <result column="proName" property="proName"/>
+        </association>
+    </resultMap>
+
+
+    <select id="GetOneBillPageData" resultMap="billMapper">
+        select * from smbms_bill,smbms_provider
+        <where>
+            <if test="bill.productName!=null">
+                AND smbms_bill.productName like concat('%',#{bill.productName},'%')
+            </if>
+            <if test="bill.isPayment!=null">
+                AND isPayment=#{bill.isPayment}
+            </if>
+            <if test="provider.proName!=null">
+                AND proName=#{provider.proName}
+            </if>
+            limit #{page.pageIndex},#{page.pageSize}
+        </where>
+    </select>
+
+
+</mapper>

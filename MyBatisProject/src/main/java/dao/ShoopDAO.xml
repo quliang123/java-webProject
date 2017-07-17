@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.IShoopDAO">
+
+    <resultMap id="categoryMapper" type="category">
+        <id column="cid" property="cid"></id>
+        <result column="cname" property="cname"/>
+        <collection property="cates" ofType="category" select="getChilderByPid" column="cid">
+        </collection>
+    </resultMap>
+    <select id="getChilderByPid" resultMap="categoryMapper">
+       SELECT  cid,cname,pid FROM category WHERE pid=#{pid}
+    </select>
+</mapper>

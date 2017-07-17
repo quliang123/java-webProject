@@ -15,7 +15,7 @@
 
     <!-- 2.按学生姓名模糊查询学生对象-->
     <select id="likeName" resultType="map" parameterType="String">
-        SELECT  * FROM  student  WHERE  NAME LIKE concat('%',#{name},'%')
+        SELECT * FROM  student  WHERE  NAME LIKE concat('%',#{name},'%')
     </select>
 
     <resultMap id="likeName" type="stu">

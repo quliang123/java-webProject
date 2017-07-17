@@ -53,8 +53,43 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>jquery</artifactId>
+            <version>2.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>javaee</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>5</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
+    <!--<build>
+
+
+    </build>-->
+
+    <!--classpath-->
     <build>
         <finalName>MyBatis</finalName>
-    </build>
+       <resources>
+               <resource>
+                      <directory>src/main/java</directory>
+                         <directory>src/main/resources</directory>
+                   <includes>
+                       <include>**/*xml</include>
+                       <include>**/*.properties</include>
+                   </includes>
+               </resource>
+       </resources>
+</build>
+
+
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
 </project>

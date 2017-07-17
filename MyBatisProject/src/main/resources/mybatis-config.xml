@@ -8,28 +8,34 @@
             &lt;!&ndash; 打印sql日志 &ndash;&gt;
             <setting name="logImpl" value="STDOUT_LOGGING" />
         </settings>-->
+
     <settings>
         <setting name="cacheEnabled" value="true"/>
         <setting name="logImpl" value="STDOUT_LOGGING"/>
     </settings>
 
     <typeAliases>
-        <typeAlias type="model.Person" alias="Person"/>
+        <typeAlias type="model.Person" alias="person"/>
+        <typeAlias type="model.Son" alias="son"/>
+        <typeAlias type="model.Category" alias="category"/>
     </typeAliases>
 
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="${driver}"/>
-                <property name="url" value="${url}"/>
-                <property name="username" value="${username}"/>
-                <property name="password" value="${password}"/>
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
             </dataSource>
         </environment>
     </environments>
 
     <mappers>
-        <mapper resource="mapper/Person.xml"/>
+        <mapper resource="dao/PersonDAO.xml"/>
+        <mapper resource="dao/SonDAO.xml"/>
+        <mapper resource="dao/ShoopDAO.xml"/>
     </mappers>
+
 </configuration>

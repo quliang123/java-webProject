@@ -6,13 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="blogs" />
         <module name="MyBatis" />
         <module name="MyBatisProject" />
+        <module name="Super" />
+        <module name="SuperMarket" />
+        <module name="SuperMarkets" />
+        <module name="TestGenerator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="blogs" target="1.8" />
       <module name="MyBatis" target="1.8" />
       <module name="MyBatisProject" target="1.8" />
+      <module name="Super" target="1.8" />
+      <module name="SuperMarket" target="1.8" />
+      <module name="SuperMarkets" target="1.8" />
+      <module name="TestGenerator" target="1.8" />
       <module name="Y2Projects" target="1.8" />
     </bytecodeTargetLevel>
   </component>

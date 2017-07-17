@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.IBlogsDAO">
+    <select id="GetAllBlogs" resultType="blog">
+     SELECT * FROM bloginfo
+     </select>
+
+    <select id="getCount" resultType="int">
+         select count(1) from bloginfo
+     </select>
+
+
+    <select id="GetOnePageData" resultType="blog">
+        SELECT * FROM bloginfo limit #{0},#{1}
+    </select>
+
+    <delete id="delBlog">
+      delete from bloginfo where blogId =#{blogId}
+    </delete>
+
+    <select id="getBlogInfo" resultType="blog">
+         select * from bloginfo where blogId=#{blogId}
+    </select>
+
+    <update id="modifyBlog">
+           update  bloginfo set BlogAuthor=#{blogAuthor},BlogAddress=#{blogAddress} where BlogId=#{blogId}
+    </update>
+
+
+</mapper>

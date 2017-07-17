@@ -4,7 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyBatis/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatisProject/MyBatisProject.iml" filepath="$PROJECT_DIR$/MyBatisProject/MyBatisProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Super/Super.iml" filepath="$PROJECT_DIR$/Super/Super.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuperMarket/SuperMarket.iml" filepath="$PROJECT_DIR$/SuperMarket/SuperMarket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuperMarkets/SuperMarkets.iml" filepath="$PROJECT_DIR$/SuperMarkets/SuperMarkets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestGenerator/TestGenerator.iml" filepath="$PROJECT_DIR$/TestGenerator/TestGenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Y2Projects.iml" filepath="$PROJECT_DIR$/Y2Projects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blogs/blogs.iml" filepath="$PROJECT_DIR$/blogs/blogs.iml" />
     </modules>
   </component>
 </project>

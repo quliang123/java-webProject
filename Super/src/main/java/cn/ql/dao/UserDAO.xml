@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ql.dao.IUserDAO">
+    <update id="modifyUserInfo">
+        update smbms_user set userName=#{user.userName},gender=#{user.gender},birthday=#{user.birthday},phone=#{user.phone},address=#{user.address},userType=#{user.userType} where id=#{user.id}
+    </update>
+
+    <delete id="delUserById">
+          delete from smbms_user where id=#{id}
+    </delete>
+
+    <!-- 添加用户-->
+    <insert id="addUser">
+insert into smbms_user(`userCode`,`userName`,`userPassword`,`gender`,`birthday`,`phone`,`address`,`userType`,`creationDate`) value(#{userCode},#{userName},#{userPassword},#{gender},#{birthday},#{phone},#{address},#{userType},#{creationDate})
+    </insert>
+
+    <!-- 模糊查询拿数据-->
+    <select id="getUserById" resultType="smbms_user">
+            select * from smbms_user where id =#{0}
+    </select>
+
+    <select id="getUserCount" resultType="int">
+        SELECT COUNT(1) FROM smbms_user
+        <where>
+            <if test="name!=null">
+                AND userName like concat('%',#{name},'%')
+            </if>
+        </where>
+    </select>
+
+    <!--多条件分页    注解参数-->
+    <select id="GetOneUserPageData" resultType="smbms_user">
+        select * from smbms_user
+        <where>
+            <if test="user.userName!=null">
+                AND userName like concat('%',#{user.userName},'%')
+            </if>
+        </where>
+        limit #{page.pageIndex},#{page.PageSize}
+    </select>
+
+    <!--登陆-->
+    <select id="isLogin" resultType="int">
+    select COUNT(1) from smbms_user where userName=#{userName} and userPassword=#{userPassword}
+</select>
+
+    <select id="findUserByUser" resultType="smbms_user">
+          SELECT * FROM smbms_user WHERE userName=#{userName} and userPassword=#{userPassword}
+    </select>
+
+    <update id="modifyPwd">
+           update smbms_user set userPassword=#{userPassword} where id=#{id}
+    </update>
+
+</mapper>
