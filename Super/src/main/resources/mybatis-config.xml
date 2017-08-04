@@ -28,6 +28,7 @@
     <mappers>
         <mapper resource="cn/ql/dao/UserDAO.xml"/>
         <mapper resource="cn/ql/dao/BillDAO.xml"/>
+        <mapper resource="cn/ql/dao/Provider.xml"/>
     </mappers>
 
 </configuration>

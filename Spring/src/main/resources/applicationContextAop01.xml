@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:aop="http://www.springframework.org/schema/aop"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+           xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+">
+    <!--正则表达式匹配顾问-->
+    <bean id="RegxpService" class="cn.ql.Spring10Regxp.dao.SomeServiceImpl"></bean>
+
+    <bean id="RegxpAdvice" class="cn.ql.Spring10Regxp.aop.MyBeforeAdvice"></bean>
+    <!--顾问-->
+    <bean id="RegxpAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="RegxpAdvice"></property>
+        <property name="patterns" value=".*R.*"></property>
+    </bean>
+
+    <bean id="RegxpProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="RegxpService"></property>
+
+        <property name="interceptorNames" value="RegxpAdvisor"></property>
+    </bean>
+
+
+
+
+    <!--顾问-->
+    <bean id="AdvisorService" class="cn.ql.Spring09Advisor.dao.SomeServiceImpl"></bean>
+
+    <bean id="AdvisorAdvice" class="cn.ql.Spring09Advisor.aop.MyBeforeAdvice"></bean>
+
+    <bean id="beforeAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+        <property name="advice" ref="AdvisorAdvice"></property>
+        <property name="mappedName" value="Run"></property>
+    </bean>
+
+    <bean id="AdvisorProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="AdvisorService"></property>
+
+        <property name="interceptorNames" value="beforeAdvisor"></property>
+    </bean>
+
+
+    <!--异常增强-->
+    <bean id="ExceptionService" class="cn.ql.spring08.dao.SomeServiceImpl"></bean>
+
+    <bean id="ExceptionAdvice" class="cn.ql.spring08.aop.MyExceptionAdvice"></bean>
+
+    <bean id="ExceptionProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="ExceptionService"></property>
+
+        <property name="interceptorNames" value="ExceptionAdvice"></property>
+    </bean>
+
+
+    <!--环绕增强-->
+    <bean id="service" class="cn.ql.springAOP07.dao.SomeServiceImpl"></bean>
+
+    <bean id="methodAdvice" class="cn.ql.springAOP07.aop.MyMethodAdvice"></bean>
+
+    <bean id="methodProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="service"></property>
+
+        <property name="interceptorNames" value="methodAdvice"></property>
+    </bean>
+
+
+    <!--后置增强-->
+    <bean id="someservice" class="cn.ql.springAOP06.dao.SomeServiceImpl"></bean>
+
+    <bean id="afterAdvice" class="cn.ql.springAOP06.aop.MyAfterAdvice"></bean>
+
+    <bean id="someproxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="someservice"></property>
+
+        <property name="interceptorNames" value="afterAdvice"></property>
+    </bean>
+
+
+    <!--前置增强-->
+    <bean id="someService" class="cn.ql.springAOP05.dao.SomeServiceImpl"></bean>
+
+    <bean id="beforeAdvice" class="cn.ql.springAOP05.aop.MyBeforeAdvice"></bean>
+
+    <bean id="someProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="someService"></property>
+
+        <property name="interceptorNames" value="beforeAdvice"></property>
+    </bean>
+
+</beans>

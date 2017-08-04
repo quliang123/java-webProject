@@ -1,6 +1,7 @@
 package cn.ql.model;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by 123 on 2017/07/12.
@@ -19,6 +20,9 @@ public class smbms_provider {
     private Date creationDate;
     private Date modifyDate;
     private int modifyBy;
+
+    //private List<smbms_bill> bills;
+
 
     public smbms_provider() {
     }

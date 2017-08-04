@@ -16,6 +16,8 @@
       <set>
         <option value="$PROJECT_DIR$/MyBatis/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatisProject/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/SuperMarket/pom.xml" />
         <option value="$PROJECT_DIR$/SuperMarkets/pom.xml" />
       </set>
     </option>

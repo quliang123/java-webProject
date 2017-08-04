@@ -50,12 +50,15 @@ public class BillTest {
         page.setPageIndex(0);
         page.setPageSize(2);
         //bill.setProductName("狗");
-        bill.setIsPayment(0);
-
+        //bill.setIsPayment(0);
         smbms_provider provider = new smbms_provider();
         // provider.setProName("bbbb");
-
         List<smbms_bill> list = dao.GetOneBillPageData(provider, bill, page);
+        System.out.println(list);
+        for (smbms_bill item : list) {
+            System.out.println(item.getProductName());
+            System.out.println(item.getProvider().getProName());
+        }
         System.out.println(list.size());
 
     }

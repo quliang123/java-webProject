@@ -339,8 +339,6 @@ public class userServlet extends HttpServlet {
             System.out.println(num);
             //总页数
             pageCount = num % pagesize == 0 ? num / pagesize : num / pagesize + 1;
-            System.out.println(pagesize + "aaaaa之后" + page.getPageSize());
-            System.out.println("hhhhhhhhhhhhh总页数" + pageCount);
             page.setTotalrecords(pageCount);
 
 

@@ -8,17 +8,32 @@
         <outputRelativeToContentRoot value="true" />
         <module name="blogs" />
         <module name="MyBatis" />
+        <module name="mybatisDemo" />
         <module name="MyBatisProject" />
+        <module name="NewsManager" />
+        <module name="Spring" />
+        <module name="springMybatisTest" />
+        <module name="SSM_Project" />
         <module name="Super" />
-        <module name="SuperMarket" />
-        <module name="SuperMarkets" />
         <module name="TestGenerator" />
+      </profile>
+      <profile name="Annotation profile for Y2Projects Maven Webapp" enabled="true">
+        <sourceOutputDir name="../springMybatisTest/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../springMybatisTest/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringMybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="blogs" target="1.8" />
       <module name="MyBatis" target="1.8" />
+      <module name="mybatisDemo" target="1.8" />
       <module name="MyBatisProject" target="1.8" />
+      <module name="NewsManager" target="1.8" />
+      <module name="Spring" target="1.8" />
+      <module name="SpringMybatis" target="1.8" />
+      <module name="springMybatisTest" target="1.8" />
+      <module name="SSM_Project" target="1.8" />
       <module name="Super" target="1.8" />
       <module name="SuperMarket" target="1.8" />
       <module name="SuperMarkets" target="1.8" />

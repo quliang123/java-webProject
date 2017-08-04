@@ -3,19 +3,37 @@ package cn.ql.model;
 import java.util.List;
 
 public class Page {
-		
-		//1.��ǰ�ǵڼ�ҳ
-		  private int PageIndex;
-		
-		//2.ÿҳ��¼��
-		  private int PageSize;
-		  
-		//3.�ܼ�¼��
-		  private int Totalrecords;
 
-		  private List<smbms_bill> bills;
+    //1.��ǰ�ǵڼ�ҳ
+    private int PageIndex;
 
-		  private  int TotlePages;
+    //2.ÿҳ��¼��
+    private int PageSize;
+
+    //3.�ܼ�¼��
+    private int Totalrecords;
+
+    private List<smbms_bill> bills;
+
+    private List<smbms_provider> providers;
+
+    public List<smbms_provider> getProviders() {
+        return providers;
+    }
+
+    public void setProviders(List<smbms_provider> providers) {
+        this.providers = providers;
+    }
+
+    public List<smbms_bill> getBills() {
+        return bills;
+    }
+
+    public void setBills(List<smbms_bill> bills) {
+        this.bills = bills;
+    }
+
+    private int TotlePages;
 
     public int getTotlePages() {
         return TotlePages;
@@ -58,6 +76,9 @@ public class Page {
                 "PageIndex=" + PageIndex +
                 ", PageSize=" + PageSize +
                 ", Totalrecords=" + Totalrecords +
+                ", bills=" + bills +
+                ", TotlePages=" + TotlePages +
+                ", users=" + users +
                 '}';
     }
 

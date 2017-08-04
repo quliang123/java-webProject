@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+">
+    <!--正则表达式匹配顾问-->
+    <bean id="RegxpService" class="cn.ql.Spring10Regxp.dao.SomeServiceImpl"></bean>
+
+    <bean id="RegxpAdvice" class="cn.ql.Spring10Regxp.aop.MyBeforeAdvice"></bean>
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"></bean>
+
+    <!--顾问-->
+    <bean id="RegxpAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="RegxpAdvice"></property>
+        <property name="patterns" value=".*R.*"></property>
+    </bean>
+
+
+    <bean id="RegxpProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="RegxpService"></property>
+
+        <property name="interceptorNames" value="RegxpAdvisor"></property>
+    </bean>
+
+
+
+
+    <!--正则表达式匹配顾问-->
+    <bean id="RegxService" class="cn.ql.Spring10Regxp.dao.SomeServiceImpl"></bean>
+
+    <bean id="RegxAdvice" class="cn.ql.Spring10Regxp.aop.MyBeforeAdvice"></bean>
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"></bean>
+
+    <!--顾问-->
+    <bean id="RegxAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="RegxAdvice"></property>
+        <property name="patterns" value=".*R.*"></property>
+    </bean>
+
+
+    <bean id="RegxProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="RegxpService"></property>
+
+        <property name="interceptorNames" value="RegxAdvisor"></property>
+    </bean>
+</beans>

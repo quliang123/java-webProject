@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="arr" class="cn.ql.spring06Collection.MyCollection">
+        <property name="names">
+            <array>
+                <value>我</value>
+                <value>爱</value>
+                <value>你</value>
+            </array>
+        </property>
+    </bean>
+
+
+    <bean id="list" class="cn.ql.spring06Collection.MyCollection">
+        <property name="list">
+            <list>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="set" class="cn.ql.spring06Collection.MyCollection">
+        <property name="set">
+            <set>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="map" class="cn.ql.spring06Collection.MyCollection">
+        <property name="map">
+            <map>
+                <entry key="001" value="1"></entry>
+                <entry key="002" value="2"></entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="properties" class="cn.ql.spring06Collection.MyCollection">
+        <property name="properties">
+            <props>
+                <prop key="1" >
+                    122121
+                </prop>
+                <prop key="2" >
+                   22222
+                </prop>
+            </props>
+        </property>
+    </bean>
+</beans>

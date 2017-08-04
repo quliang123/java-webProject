@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.ql.dao.IBillDAO">
+
+
+
+
     <!--获取各种组合条件的统计-->
     <select id="getBillCount" resultType="int">
         select COUNT(1) from smbms_bill,smbms_provider
@@ -20,17 +24,28 @@
 
 
     <!--模糊查询 -->
-    <resultMap id="billMapper" type="smbms_bill">
+    <resultMap id="billMapper" type="cn.ql.model.smbms_bill">
         <id column="id" property="id"></id>
-        <association column="id" property="provider" javaType="cn.ql.model.smbms_provider">
+        <result column="billCode" property="billCode"/>
+        <result column="productName" property="productName" javaType="String"/>
+        <result column="productCount" property="productCount"/>
+        <result column="totalPrice" property="totalPrice"/>
+        <result column="isPayment" property="isPayment"/>
+        <result column="creationDate" property="creationDate"/>
+        <association property="provider" javaType="cn.ql.model.smbms_provider" column="id">   <!--多对一Column-->
+            <id column="id" property="id"></id>
             <result column="proName" property="proName"/>
         </association>
     </resultMap>
 
 
     <select id="GetOneBillPageData" resultMap="billMapper">
-        select * from smbms_bill,smbms_provider
+        select smbms_bill.`billCode`,smbms_bill.`id`,
+        smbms_bill.`isPayment`,smbms_bill.`totalPrice`,
+        smbms_bill.`creationDate`,smbms_provider.`proName`,smbms_bill.`productName`
+        from smbms_bill,smbms_provider
         <where>
+            smbms_provider.`id`=smbms_bill.`pid`
             <if test="bill.productName!=null">
                 AND smbms_bill.productName like concat('%',#{bill.productName},'%')
             </if>
@@ -40,9 +55,7 @@
             <if test="provider.proName!=null">
                 AND proName=#{provider.proName}
             </if>
-            limit #{page.pageIndex},#{page.pageSize}
         </where>
+        limit (#{page.pageIndex}-1)*#{page.pageSize},#{page.pageSize}
     </select>
-
-
 </mapper>

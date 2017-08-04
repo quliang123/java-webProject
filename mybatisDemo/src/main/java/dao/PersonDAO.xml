@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.IPersonDAO">
+    <cache/>
+   <!-- <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
+
+
+
+
+    <!--SELECT * FROM person WHERE username LIKE CONCAT('%',#{username},'%') AND age=#{age}-->
+    <resultMap id="findSonByNoMultipleSQL" type="person">
+        <id column="id" property="id"></id>
+        <result column="userName" property="userName"></result>
+        <collection property="sons" ofType="son" select="selectPersonById" column="id"></collection>
+    </resultMap>
+    <select id="selectPersonById" resultType="son">
+        SELECT * FROM son where id =#{id}
+    </select>
+    <select id="findSonByNoMultipleSQL" resultMap="findSonByNoMultipleSQL">
+        select person.`id`,person.`userName` from person WHERE id=#{id}
+    </select>
+
+
+    <resultMap id="manyson" type="person">
+        <id column="id" property="id"></id>
+        <result column="userName" property="userName"></result>
+        <collection property="sons" ofType="son">
+            <id column="id" property="id"></id>
+            <result column="name" property="name"></result>
+        </collection>
+    </resultMap>
+
+    <select id="findSonByNo" resultMap="manyson">
+         select person.`id`,person.`userName`,son.`id`,son.`name` from person,son where person.`id`=son.`id` and son.`id`=#{id}
+    </select>
+
+
+    <select id="LikePerson" resultType="Person">
+        SELECT * FROM person WHERE 1=1
+        <if test="userName !=null">
+            userName LIKE CONCAT('%',#{0},'%')
+        </if>
+        <if test="age !=null">
+            AND age = #{1}
+        </if>
+    </select>
+
+
+    <!-- <insert id="insertPerson" parameterType="Person">
+         INSERT INTO PERSON(ID,USERNAME,AGE,MOBILEPHONE)VALUES (#{id},#{username},#{age},#{mobilePhone})
+         <selectKey resultType="int" keyProperty="ID" order="AFTER">
+             SELECT @@IDENTITY
+         </selectKey>
+     </insert>
+
+     <select id="selectAll" resultType="person" flushCache="false">
+         SELECT  * FROM  person WHERE  id=#{id}
+     </select>-->
+</mapper>

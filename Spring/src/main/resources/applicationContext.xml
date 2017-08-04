@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--  第一个spring例子  -->
+    <bean id="someService" class="cn.ql.spring01.SomeService" scope="singleton">
+    </bean>
+
+
+    <!--第二个spring例子-->
+    <bean id="car" class="cn.ql.spring02.Car">
+        <property name="brand" value="兰博基尼"></property>
+        <property name="color" value="绿色"></property>
+    </bean>
+
+    <bean id="student" class="cn.ql.spring02.Student">
+        <property name="name" value="大哥"></property>
+        <property name="age" value="3"></property>
+        <property name="car" ref="car"></property>
+    </bean>
+
+
+    <!--第三个spring例子 -->
+    <bean id="a4Paper" class="cn.ql.spring03.A4Paper"></bean>
+    <bean id="colorInk" class="cn.ql.spring03.ColorInk"></bean>
+
+    <bean id="print" class="cn.ql.spring03.Print">
+        <property name="ink" ref="colorInk"></property>     <!--ref可以说是间接调用了colorInkk的id的实现类-->
+        <property name="paper" ref="a4Paper"></property>    <!---->
+    </bean>
+
+
+</beans>

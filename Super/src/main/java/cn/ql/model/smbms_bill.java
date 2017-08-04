@@ -1,13 +1,20 @@
 package cn.ql.model;
 
+import org.apache.ibatis.type.JdbcType;
+import org.apache.ibatis.type.TypeHandler;
+
 import java.io.Serializable;
+import java.sql.CallableStatement;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Date;
 
 /**
  * Created by 123 on 2017/07/12.
  * 商品实体类
  */
-public class smbms_bill implements Serializable {
+public class smbms_bill implements Serializable{
     private Integer id;
     private String billCode;
     private String productName;
@@ -20,7 +27,7 @@ public class smbms_bill implements Serializable {
     private Date creationDate;
     private Integer modifyBy;
     private Date modifyDate;
-
+    private Integer pid;
     private smbms_provider provider;
 
     public smbms_provider getProvider() {
@@ -29,6 +36,14 @@ public class smbms_bill implements Serializable {
 
     public void setProvider(smbms_provider provider) {
         this.provider = provider;
+    }
+
+    public Integer getPid() {
+        return pid;
+    }
+
+    public void setPid(Integer pid) {
+        this.pid = pid;
     }
 
     public Integer getId() {
@@ -144,4 +159,6 @@ public class smbms_bill implements Serializable {
                 ", modifyDate=" + modifyDate +
                 '}';
     }
+
+
 }
