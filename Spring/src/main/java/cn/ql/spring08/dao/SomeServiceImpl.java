@@ -14,6 +14,7 @@ package cn.ql.spring08.dao;/**
 public class SomeServiceImpl implements ISomeService {
     @Override
     public void Run() {
+        //因为需要测试异常增强,自己伪造了一个算术异常
         int result = 5 / 0;
         System.out.println("厉害了,我等");
     }

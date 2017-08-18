@@ -8,22 +8,17 @@
 ">
     <!--1.配置dao层    只能是实现类,不是接口-->
     <bean id="userDAO" class="cn.ql.springAOP04.dao.UserDAOImpl"></bean>
-
     <!--2.service 植入对象-->
     <bean id="userService" class="cn.ql.springAOP04.service.UserServiceImpl">
         <property name="impl" ref="userDAO"></property>
     </bean>
-
     <!--3 通知  advice:增强-->
     <bean id="loggerBefore" class="cn.ql.springAOP04.aop.LoggerBeforeAdvice"></bean>
-
     <aop:config>
         <!--配置切点  expression表达式      execution需要拦截的类   -->
         <aop:pointcut id="mypointcut"
                       expression="execution(public void cn.ql.springAOP04.service.UserServiceImpl.save(cn.ql.springAOP04.entity.User))"></aop:pointcut>
-
         <!--织入   advice-ref   相当于引用loggerBefore      pointcut-ref  引用了mypointcut      -->
         <aop:advisor advice-ref="loggerBefore" pointcut-ref="mypointcut"></aop:advisor>
     </aop:config>
-
 </beans>

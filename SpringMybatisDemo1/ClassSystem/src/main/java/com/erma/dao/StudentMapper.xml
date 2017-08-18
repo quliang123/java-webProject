@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.erma.dao.StudentMapper">
+
+
+    <resultMap id="stuMapper" type="com.erma.model.Student">
+        <id column="studentid" property="studentid"></id>
+        <result column="studentname" property="studentname"/>
+        <result column="studentcatetime" property="studentcatetime"/>
+        <association property="classes" javaType="com.erma.model.Classes" >
+            <result property="classesanem" column="classesanem" ></result>
+        </association>
+    </resultMap>
+
+    <select id="getStusById" resultMap="stuMapper" >
+        select * from student,classes where classes.`classesid`=student.`classesid` and classes.`classesanem`=#{classesanem}
+    </select>
+
+    <resultMap id="BaseResultMap" type="com.erma.model.Student">
+        <id column="studentid" property="studentid" jdbcType="INTEGER"/>
+        <result column="studentname" property="studentname" jdbcType="VARCHAR"/>
+        <result column="classesid" property="classesid" jdbcType="VARCHAR"/>
+        <result column="studentcatetime" property="studentcatetime" jdbcType="DATE"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    studentid, studentname, classesid, studentcatetime
+  </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from student
+        where studentid = #{studentid,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from student
+    where studentid = #{studentid,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.erma.model.Student">
+    insert into student (studentid, studentname, classesid, 
+      studentcatetime)
+    values (#{studentid,jdbcType=INTEGER}, #{studentname,jdbcType=VARCHAR}, #{classesid,jdbcType=VARCHAR}, 
+      #{studentcatetime,jdbcType=DATE})
+  </insert>
+    <insert id="insertSelective" parameterType="com.erma.model.Student">
+        insert into student
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="studentid != null">
+                studentid,
+            </if>
+            <if test="studentname != null">
+                studentname,
+            </if>
+            <if test="classesid != null">
+                classesid,
+            </if>
+            <if test="studentcatetime != null">
+                studentcatetime,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="studentid != null">
+                #{studentid,jdbcType=INTEGER},
+            </if>
+            <if test="studentname != null">
+                #{studentname,jdbcType=VARCHAR},
+            </if>
+            <if test="classesid != null">
+                #{classesid,jdbcType=VARCHAR},
+            </if>
+            <if test="studentcatetime != null">
+                #{studentcatetime,jdbcType=DATE},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.erma.model.Student">
+        update student
+        <set>
+            <if test="studentname != null">
+                studentname = #{studentname,jdbcType=VARCHAR},
+            </if>
+            <if test="classesid != null">
+                classesid = #{classesid,jdbcType=VARCHAR},
+            </if>
+            <if test="studentcatetime != null">
+                studentcatetime = #{studentcatetime,jdbcType=DATE},
+            </if>
+        </set>
+        where studentid = #{studentid,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.erma.model.Student">
+    update student
+    set studentname = #{studentname,jdbcType=VARCHAR},
+      classesid = #{classesid,jdbcType=VARCHAR},
+      studentcatetime = #{studentcatetime,jdbcType=DATE}
+    where studentid = #{studentid,jdbcType=INTEGER}
+  </update>
+</mapper>

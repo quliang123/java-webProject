@@ -15,7 +15,7 @@ public class TestTX {
     @Test
     public void TestTX() throws StockException {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContextTX.xml");
-        IAccountService service = (IAccountService) ctx.getBean("accountServiceProxy");
+        IAccountService service = (IAccountService) ctx.getBean("accountService");
         service.buyStock(1,2,1,2000);
     }
 }

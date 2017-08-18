@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--  第一个spring例子  -->
+    <!--  第一个spring例子    singleton   单列的    prototype 多例的 -->
     <bean id="someService" class="cn.ql.spring01.SomeService" scope="singleton">
     </bean>
 

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jquery-2.0.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mybatisDemo/src/main/webapp/lib/jquery-2.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

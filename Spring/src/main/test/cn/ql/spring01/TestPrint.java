@@ -7,8 +7,6 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.applet.AppletContext;
-
 /**
  * \* Created with IntelliJ IDEA.
  * \* User: 123
@@ -19,7 +17,6 @@ import java.applet.AppletContext;
  * \
  */
 public class TestPrint {
-
     @Test
     public void Testprint() {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");

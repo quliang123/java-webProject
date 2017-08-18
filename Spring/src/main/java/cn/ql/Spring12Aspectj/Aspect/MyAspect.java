@@ -20,12 +20,9 @@ public class MyAspect {
     @Pointcut("execution(* *..Spring12Aspectj.*.*.Say(..))")
     public void Say() { }
 
-
-
     @Before("Sing() || look() || Say()")
     public void before() {
         System.out.println("==================before==================");
     }
-
 
 }

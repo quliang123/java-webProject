@@ -14,13 +14,10 @@ import org.aspectj.lang.JoinPoint;
  * \
  */
 public class MyBeforeAdvice{
-
     public void before() throws Throwable {
         System.out.println("之前===========================");
     }
-
     public void after(JoinPoint jp,Object result){
         System.out.println("之后===========================");
     }
-
 }

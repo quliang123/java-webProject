@@ -4,10 +4,11 @@
        xmlns:p="http://www.springframework.org/schema/p"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-
+       xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
          http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/tx   http://www.springframework.org/schema/tx/spring-tx.xsd
 ">
     <!--引用外部jdbc的配置文件-->
 
@@ -19,7 +20,7 @@
 
     <!--4.创建Service层中的实现,并引用dao层中的实现类-->
 
-   <context:property-placeholder location="jdbc.properties"></context:property-placeholder>
+    <context:property-placeholder location="jdbc.properties"></context:property-placeholder>
     <!--<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="${jdbc.driverClassName}"></property>
         <property name="url" value="${jdbc.url}"></property>
@@ -48,11 +49,32 @@
     </bean>
 
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-         <property name="dataSource" ref="dataSource"></property>
+        <property name="dataSource" ref="dataSource"></property>
     </bean>
 
-    <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
-        <property name="transactionManager" ref="transactionManager"></property>
-        <property name="target" ref="accountService" ></property>
-    </bean>
+    <!-- <bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+         <property name="transactionManager" ref="transactionManager"></property>
+         <property name="target" ref="accountService" ></property>
+     </bean>-->
+
+
+      <!--注解方式 扫描带有@Transactional-->
+     <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
+
+     <!--Aspectj-->
+    <!--<tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="buy*" isolation="DEFAULT" propagation="REQUIRED" rollback-for="Exception"/>
+        </tx:attributes>
+
+    </tx:advice>
+
+    <aop:config>
+        &lt;!&ndash;切点&ndash;&gt;
+        <aop:pointcut id="mypointcut" expression="execution(* *..service.*.*(..))"/>
+        &lt;!&ndash;顾问&ndash;&gt;
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="mypointcut"></aop:advisor>
+    </aop:config>-->
+
+
 </beans>

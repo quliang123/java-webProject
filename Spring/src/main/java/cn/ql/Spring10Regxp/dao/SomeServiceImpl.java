@@ -19,7 +19,7 @@ public class SomeServiceImpl implements ISomeService {
 
     @Override
     public void Sing() {
-        System.out.println("她骚  Sing");
+        System.out.println("她骚气  Sing");
     }
 
     @Override

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.erma.dao.UserMapper" >
+
+  <select id="isLogin" resultType="int">
+    select count(1) from user where logincode=#{logincode} and loginpassword=#{loginpassword}
+  </select>
+
+  <resultMap id="BaseResultMap" type="com.erma.model.User" >
+    <id column="loginid" property="loginid" jdbcType="INTEGER" />
+    <result column="logincode" property="logincode" jdbcType="VARCHAR" />
+    <result column="loginpassword" property="loginpassword" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    loginid, logincode, loginpassword
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where loginid = #{loginid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from user
+    where loginid = #{loginid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.erma.model.User" >
+    insert into user (loginid, logincode, loginpassword
+      )
+    values (#{loginid,jdbcType=INTEGER}, #{logincode,jdbcType=VARCHAR}, #{loginpassword,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.erma.model.User" >
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="loginid != null" >
+        loginid,
+      </if>
+      <if test="logincode != null" >
+        logincode,
+      </if>
+      <if test="loginpassword != null" >
+        loginpassword,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="loginid != null" >
+        #{loginid,jdbcType=INTEGER},
+      </if>
+      <if test="logincode != null" >
+        #{logincode,jdbcType=VARCHAR},
+      </if>
+      <if test="loginpassword != null" >
+        #{loginpassword,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.erma.model.User" >
+    update user
+    <set >
+      <if test="logincode != null" >
+        logincode = #{logincode,jdbcType=VARCHAR},
+      </if>
+      <if test="loginpassword != null" >
+        loginpassword = #{loginpassword,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where loginid = #{loginid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.erma.model.User" >
+    update user
+    set logincode = #{logincode,jdbcType=VARCHAR},
+      loginpassword = #{loginpassword,jdbcType=VARCHAR}
+    where loginid = #{loginid,jdbcType=INTEGER}
+  </update>
+</mapper>

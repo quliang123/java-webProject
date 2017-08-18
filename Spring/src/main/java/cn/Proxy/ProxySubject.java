@@ -10,8 +10,10 @@ package cn.Proxy;/**
  * \* To change this template use File | Settings | File Templates.
  * \* Description:
  * \
+ *
+ * 代理对象
  */
-public class Proxy implements Subject {
+public class ProxySubject implements Subject {
     private RealSubject rs;
 
     @Override

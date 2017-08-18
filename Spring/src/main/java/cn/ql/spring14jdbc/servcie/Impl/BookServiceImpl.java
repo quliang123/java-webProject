@@ -11,7 +11,7 @@ import java.util.List;
  */
 
 public class BookServiceImpl implements IBookService {
-
+    //植入BookDAO
     private IBookDAO dao;
 
     public IBookDAO getDao() {
@@ -26,5 +26,4 @@ public class BookServiceImpl implements IBookService {
     public List<Book> findAll() {
         return dao.FindAll();
     }
-
 }

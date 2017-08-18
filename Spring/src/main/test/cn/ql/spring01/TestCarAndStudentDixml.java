@@ -17,7 +17,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * \
  */
 public class TestCarAndStudentDixml {
-
     @Test
     public void TestCarAndStudent() {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContextDixml.xml");

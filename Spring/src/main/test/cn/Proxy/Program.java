@@ -12,10 +12,8 @@ package cn.Proxy;/**
  * \
  */
 public class Program {
-
     public static void main(String[] args) {
-        Proxy proxy = new Proxy();
+        ProxySubject proxy = new ProxySubject();
         proxy.service();
     }
-
 }

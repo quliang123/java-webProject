@@ -11,6 +11,7 @@ package cn.ql.spring03;/**
  * \* Description:
  * \
  */
+///打印机
 public class Print {
     //植入两个复杂类型的对象
     private Ink ink;

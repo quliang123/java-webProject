@@ -13,10 +13,7 @@ package cn.ql.Spring10Regxp.dao;/**
  */
 public interface ISomeService {
     void Run();
-
     void Sing();
-
     void look();
-
     void Say();
 }

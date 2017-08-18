@@ -2,7 +2,6 @@ package cn.ql.spring01;/**
  * Created by 123 on 2017/07/24.
  */
 
-import cn.ql.spring01.SomeService;
 import cn.ql.spring02.Student;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -18,7 +17,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * \
  */
 public class TestCarAndStudent {
-
     @Test
     public void TestCarAndStudent() {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");

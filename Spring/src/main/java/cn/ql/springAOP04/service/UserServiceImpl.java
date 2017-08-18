@@ -3,7 +3,6 @@ package cn.ql.springAOP04.service;/**
  */
 
 import cn.ql.springAOP04.dao.IUserDAO;
-import cn.ql.springAOP04.dao.UserDAOImpl;
 import cn.ql.springAOP04.entity.User;
 
 /**
@@ -20,6 +19,11 @@ public class UserServiceImpl implements IUserService {
 
     private IUserDAO dao;
 
+    @Override
+    public void save(User user) {
+        dao.save(user);
+    }
+
     public IUserDAO getImpl() {
         return dao;
     }
@@ -28,8 +32,5 @@ public class UserServiceImpl implements IUserService {
         this.dao = dao;
     }
 
-    @Override
-    public void save(User user) {
-        dao.save(user);
-    }
+
 }

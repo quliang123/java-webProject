@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.erma.dao.StudentattendanceMapper">
+
+    <resultMap id="stuMapper" type="com.erma.model.Studentattendance">
+           <id column="studentid" property="studentid"></id>
+           <id column="attendanceid" property="attendanceid"></id>
+           <result column="attendancetime" property="attendancetime"/>
+        <collection property="students" ofType="com.erma.model.Student" column="studentid">
+            <id column="studentid" property="studentid"></id>
+            <result column="studentname" property="studentname"/>
+        </collection>
+
+    </resultMap>
+
+    <select id="getAllStusByDate" parameterType="date" resultMap="stuMapper">
+  select studentattendance.`attendanceid`,student.`studentname`,attendance.`attendancename`,studentattendance.`attendancetime`
+  from student,studentattendance,attendance where studentattendance.`studentid`=student.`studentid`
+        and studentattendance.`attendanceid`=attendance.`attendanceid` and attendancetime=#{attendancetime}
+    </select>
+
+
+    <insert id="save" parameterType="java.util.List">
+      insert into studentattendance (studentid, attendancetime,
+      attendanceid)
+    values(#{studentid},#{attendancetime},#{attendanceid})
+</insert>
+
+    <!-- /*(#{studentattendaneid,jdbcType=INTEGER}, #{studentid,jdbcType=INTEGER}, #{attendancetime,jdbcType=DATE},
+     #{attendanceid,jdbcType=INTEGER})*/-->
+
+    <resultMap id="BaseResultMap" type="com.erma.model.Studentattendance">
+        <id column="studentattendaneid" property="studentattendaneid" jdbcType="INTEGER"/>
+        <result column="studentid" property="studentid" jdbcType="INTEGER"/>
+        <result column="attendancetime" property="attendancetime" jdbcType="DATE"/>
+        <result column="attendanceid" property="attendanceid" jdbcType="INTEGER"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    studentattendaneid, studentid, attendancetime, attendanceid
+  </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from studentattendance
+        where studentattendaneid = #{studentattendaneid,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from studentattendance
+    where studentattendaneid = #{studentattendaneid,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.erma.model.Studentattendance">
+    insert into studentattendance (studentattendaneid, studentid, attendancetime,
+      attendanceid)
+    values (#{studentattendaneid,jdbcType=INTEGER}, #{studentid,jdbcType=INTEGER}, #{attendancetime,jdbcType=DATE},
+      #{attendanceid,jdbcType=INTEGER})
+  </insert>
+    <insert id="insertSelective" parameterType="com.erma.model.Studentattendance">
+        insert into studentattendance
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="studentattendaneid != null">
+                studentattendaneid,
+            </if>
+            <if test="studentid != null">
+                studentid,
+            </if>
+            <if test="attendancetime != null">
+                attendancetime,
+            </if>
+            <if test="attendanceid != null">
+                attendanceid,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="studentattendaneid != null">
+                #{studentattendaneid,jdbcType=INTEGER},
+            </if>
+            <if test="studentid != null">
+                #{studentid,jdbcType=INTEGER},
+            </if>
+            <if test="attendancetime != null">
+                #{attendancetime,jdbcType=DATE},
+            </if>
+            <if test="attendanceid != null">
+                #{attendanceid,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.erma.model.Studentattendance">
+        update studentattendance
+        <set>
+            <if test="studentid != null">
+                studentid = #{studentid,jdbcType=INTEGER},
+            </if>
+            <if test="attendancetime != null">
+                attendancetime = #{attendancetime,jdbcType=DATE},
+            </if>
+            <if test="attendanceid != null">
+                attendanceid = #{attendanceid,jdbcType=INTEGER},
+            </if>
+        </set>
+        where studentattendaneid = #{studentattendaneid,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.erma.model.Studentattendance">
+    update studentattendance
+    set studentid = #{studentid,jdbcType=INTEGER},
+      attendancetime = #{attendancetime,jdbcType=DATE},
+      attendanceid = #{attendanceid,jdbcType=INTEGER}
+    where studentattendaneid = #{studentattendaneid,jdbcType=INTEGER}
+  </update>
+</mapper>

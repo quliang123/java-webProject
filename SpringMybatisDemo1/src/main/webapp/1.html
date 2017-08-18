@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <select >
+            <option selected="selected"></option>
+            <c:forEach item="${lists}" var="item">
+                <option>${item.classesanem}</option>
+            </c:forEach>
+        </select>
+        <input>
+    </form>
+</body>
+</html>

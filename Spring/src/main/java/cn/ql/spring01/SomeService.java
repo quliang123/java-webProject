@@ -13,11 +13,9 @@ package cn.ql.spring01; /**
  */
 public class SomeService {
     private String info;
-
     public SomeService() {
         System.out.println("===============");
     }
-
     public String getInfo() {
         return info;
     }
@@ -25,7 +23,6 @@ public class SomeService {
     public void setInfo(String info) {
         this.info = info;
     }
-
     public void work() {
         System.out.println("Hello" + info);
     }

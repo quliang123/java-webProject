@@ -22,7 +22,6 @@ public class Test01 {
     public void test08() {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContextAOP02.xml");
         cn.ql.Spring12Aspectj.dao.ISomeService service = (cn.ql.Spring12Aspectj.dao.ISomeService) ctx.getBean("someService");
-
         service.Run();
         service.Say();
         service.look();
@@ -32,14 +31,12 @@ public class Test01 {
 
     @Test
     public void test07() {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContextAOP02.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContextAOP01.xml");
         cn.ql.Spring11.dao.ISomeService service = (cn.ql.Spring11.dao.ISomeService) ctx.getBean("RegxpProxy");
-
         service.Run();
         service.Say();
         service.look();
         service.Sing();
-
     }
 
 
@@ -49,6 +46,8 @@ public class Test01 {
         cn.ql.Spring10Regxp.dao.ISomeService service = (cn.ql.Spring10Regxp.dao.ISomeService) ctx.getBean("RegxpProxy");
         service.Run();
         service.Say();
+        service.look();
+        service.Sing();
     }
 
     @Test

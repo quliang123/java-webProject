@@ -3,11 +3,12 @@ package cn.ql.Spring15TX.service;
 import cn.ql.Spring15TX.dao.IAccountDAO;
 import cn.ql.Spring15TX.dao.IStockDAO;
 import cn.ql.Spring15TX.entity.StockException;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by 123 on 2017/08/04.
  */
-
+@Transactional(rollbackFor = StockException.class)
 public class AccountServiceImpl implements IAccountService {
     public IAccountDAO getAccountDAO() {
         return accountDAO;
@@ -30,16 +31,13 @@ public class AccountServiceImpl implements IAccountService {
     }
 
 
-
-
-
     @Override
     public void buyStock(int sid, int count, int aid, double money) throws StockException {
         boolean isBuy = true;
         accountDAO.updateAccount(aid, money, isBuy);
 
 
-        if (1==1){
+        if (1 == 1) {
             throw new StockException("出错了");
         }
         stockDAO.updateStock(sid, count, isBuy);

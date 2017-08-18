@@ -16,7 +16,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * \
  */
 public class TestSomeService {
-
     @Test
     public void TestSomeService() {
         /**
@@ -24,12 +23,9 @@ public class TestSomeService {
          * singleton   单列的
          *prototype 多例的
          */
-
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-        /*SomeService someService = (SomeService)ctx.getBean("someService");
-
+        SomeService someService = (SomeService)ctx.getBean("someService");
         someService.setInfo("spring");
-
-        someService.work();*/
+        someService.work();
     }
 }

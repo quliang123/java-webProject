@@ -13,6 +13,5 @@ package cn.ql.Spring09Advisor.dao;/**
  */
 public interface ISomeService {
     void Run();
-
     void Say();
 }

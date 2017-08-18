@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/blogs/blogs.iml" filepath="$PROJECT_DIR$/blogs/blogs.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisDemo/mybatisDemo.iml" filepath="$PROJECT_DIR$/mybatisDemo/mybatisDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springMybatisTest/springMybatisTest.iml" filepath="$PROJECT_DIR$/springMybatisTest/springMybatisTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc/springmvc.iml" filepath="$PROJECT_DIR$/springmvc/springmvc.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.erma.dao.AttendanceMapper" >
+  <resultMap id="BaseResultMap" type="com.erma.model.Attendance" >
+    <id column="attendanceid" property="attendanceid" jdbcType="INTEGER" />
+    <result column="attendancename" property="attendancename" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    attendanceid, attendancename
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from attendance
+    where attendanceid = #{attendanceid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from attendance
+    where attendanceid = #{attendanceid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.erma.model.Attendance" >
+    insert into attendance (attendanceid, attendancename)
+    values (#{attendanceid,jdbcType=INTEGER}, #{attendancename,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.erma.model.Attendance" >
+    insert into attendance
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="attendanceid != null" >
+        attendanceid,
+      </if>
+      <if test="attendancename != null" >
+        attendancename,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="attendanceid != null" >
+        #{attendanceid,jdbcType=INTEGER},
+      </if>
+      <if test="attendancename != null" >
+        #{attendancename,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.erma.model.Attendance" >
+    update attendance
+    <set >
+      <if test="attendancename != null" >
+        attendancename = #{attendancename,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where attendanceid = #{attendanceid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.erma.model.Attendance" >
+    update attendance
+    set attendancename = #{attendancename,jdbcType=VARCHAR}
+    where attendanceid = #{attendanceid,jdbcType=INTEGER}
+  </update>
+</mapper>

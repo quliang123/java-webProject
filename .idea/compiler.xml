@@ -12,6 +12,7 @@
         <module name="MyBatisProject" />
         <module name="NewsManager" />
         <module name="Spring" />
+        <module name="springmvc" />
         <module name="springMybatisTest" />
         <module name="SSM_Project" />
         <module name="Super" />
@@ -31,6 +32,8 @@
       <module name="MyBatisProject" target="1.8" />
       <module name="NewsManager" target="1.8" />
       <module name="Spring" target="1.8" />
+      <module name="SpringMVC" target="1.8" />
+      <module name="springmvc" target="1.8" />
       <module name="SpringMybatis" target="1.8" />
       <module name="springMybatisTest" target="1.8" />
       <module name="SSM_Project" target="1.8" />

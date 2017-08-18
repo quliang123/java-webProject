@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.erma.dao.ClassesMapper" >
+
+
+
+  <select id="AllClass" resultType="com.erma.model.Classes">
+    select * from classes
+  </select>
+
+  <resultMap id="BaseResultMap" type="com.erma.model.Classes" >
+    <id column="classesid" property="classesid" jdbcType="INTEGER" />
+    <result column="classesanem" property="classesanem" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    classesid, classesanem
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from classes
+    where classesid = #{classesid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from classes
+    where classesid = #{classesid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.erma.model.Classes" >
+    insert into classes (classesid, classesanem)
+    values (#{classesid,jdbcType=INTEGER}, #{classesanem,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.erma.model.Classes" >
+    insert into classes
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="classesid != null" >
+        classesid,
+      </if>
+      <if test="classesanem != null" >
+        classesanem,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="classesid != null" >
+        #{classesid,jdbcType=INTEGER},
+      </if>
+      <if test="classesanem != null" >
+        #{classesanem,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.erma.model.Classes" >
+    update classes
+    <set >
+      <if test="classesanem != null" >
+        classesanem = #{classesanem,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where classesid = #{classesid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.erma.model.Classes" >
+    update classes
+    set classesanem = #{classesanem,jdbcType=VARCHAR}
+    where classesid = #{classesid,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -13,7 +13,8 @@
     <!--顾问-->
     <bean id="RegxpAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
         <property name="advice" ref="RegxpAdvice"></property>
-        <property name="patterns" value=".*R.*"></property>
+        <!-- 指定含有S的方法拦截-->
+        <property name="patterns" value="cn.ql.Spring10Regxp.dao.SomeServiceImpl.*S.*"></property>
     </bean>
 
     <bean id="RegxpProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
@@ -32,9 +33,9 @@
 
     <bean id="beforeAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
         <property name="advice" ref="AdvisorAdvice"></property>
+        <!--  匹配方法名-->
         <property name="mappedName" value="Run"></property>
     </bean>
-
     <bean id="AdvisorProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
         <property name="target" ref="AdvisorService"></property>
 

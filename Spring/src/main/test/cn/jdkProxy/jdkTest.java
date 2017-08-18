@@ -6,7 +6,6 @@ import cn.jdkdynamicProxy.IService;
 import cn.jdkdynamicProxy.IUserDAO;
 import cn.jdkdynamicProxy.ServicImpl;
 import cn.jdkdynamicProxy.UserDAOImpl;
-import com.sun.org.apache.xpath.internal.SourceTree;
 import org.junit.Test;
 
 import java.lang.reflect.InvocationHandler;
@@ -45,6 +44,14 @@ public class jdkTest {
         final IUserDAO service = new UserDAOImpl();
 
         InvocationHandler ih = new InvocationHandler() {
+            /**
+             *
+             * @param proxy       代理对象
+             * @param method     被代理对象的方法
+             * @param args        被代理对象参数
+             * @return
+             * @throws Throwable
+             */
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                 System.out.println("before===========");
