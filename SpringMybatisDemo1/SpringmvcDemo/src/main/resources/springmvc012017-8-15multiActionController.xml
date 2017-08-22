@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+         http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/tx   http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+">
+
+    <!--推荐方式 第三种方式   resources标签-->
+    <mvc:resources mapping="/img/**" location="/img/"></mvc:resources>
+
+
+    <!--控制映射器-->
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="urlMap">
+            <map>
+                <entry key="/first" value="firstController"></entry>
+            </map>
+        </property>
+    </bean>
+
+      <bean id="nameResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+          <property name="mappings">
+              <props>
+                  <prop key="/doSuccess">doSuccess</prop>
+              </props>
+          </property>
+      </bean>
+
+
+    <bean id="parameterMethodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+        <property name="paramName" value="actionName"></property>
+    </bean>
+
+
+      <!--处理器类-->
+    <bean id="firstController" class="ParametMerthodNameResolverController.ParametMerthodNameResolverController">
+        <property name="methodNameResolver" ref="parameterMethodNameResolver"></property>
+    </bean>
+
+    <!--视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+</beans>

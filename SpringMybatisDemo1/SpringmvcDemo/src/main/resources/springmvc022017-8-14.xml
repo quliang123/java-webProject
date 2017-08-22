@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+         http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/tx   http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+">
+
+    <!--推荐方式 第三种方式   resources标签-->
+    <mvc:resources mapping="/img/**" location="/img/"></mvc:resources>
+
+
+    <!--注册hanlder  处理器-->
+       <bean id="secondController" class="controller2017814.SecondController">
+             <property name="supportedMethods" value="GET">
+             </property>
+       </bean>
+
+
+    <!--控制映射器-->
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+           <!--第一种方式-->
+            <props>
+              <prop key="/hehe.do">firstController</prop>
+                <prop key="/haha.do">firstController</prop>
+            </props>
+            <!--第一种方式-->
+           <!-- <map>
+                <entry key="/he.do" value="firstController"></entry>
+                <entry key="/ha.do" value="firstController"></entry>
+            </map>-->
+        </property>
+    </bean>
+
+
+    <bean id="firstController" class="controller2017814.FirstController"></bean>
+
+    <!--处理器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+
+
+</beans>
