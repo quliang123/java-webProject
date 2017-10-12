@@ -23,6 +23,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/SpringMybatisDemo1/ResultInput/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/SpringMybatisDemo1/classmanagementsystem/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/SpringMybatisDemo1/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/src/demo1" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

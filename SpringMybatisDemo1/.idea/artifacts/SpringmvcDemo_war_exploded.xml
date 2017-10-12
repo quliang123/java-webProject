@@ -7,6 +7,8 @@
           <element id="module-output" name="SpringmvcDemo" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: junit:junit:4.12" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
@@ -41,6 +43,9 @@
           <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.2" />
           <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.11" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.0-RC3" />
+          <element id="library" level="project" name="Maven: org.opentest4j:opentest4j:1.0.0-RC1" />
+          <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-commons:1.0.0-RC3" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:3.1.13" />
           <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />

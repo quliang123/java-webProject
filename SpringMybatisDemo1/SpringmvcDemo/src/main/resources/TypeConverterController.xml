@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+         http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/tx   http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+">
+      <!--开启包  扫描器-->
+    <context:component-scan base-package="converttype"></context:component-scan>
+    <!-- 添加注解驱动 -->
+    <bean id="myConverter" class="converttype.FirsController"></bean>
+    <!-- 默认扫描的包路径 -->
+    <!--转换服务工厂Bean-->
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <!--<property name="converters" ref="myConverter"></property>-->
+        <property name="converters" ref="myConverter"></property>
+    </bean>
+
+
+   <mvc:annotation-driven conversion-service="conversionService"/>
+</beans>

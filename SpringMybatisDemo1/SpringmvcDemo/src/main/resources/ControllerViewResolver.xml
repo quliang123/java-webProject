@@ -15,7 +15,6 @@
 
          <!--外部内部视图-->
 
-
     <!--推荐方式 第三种方式   resources标签-->
     <mvc:resources mapping="/img/**" location="/img/"></mvc:resources>
     <!--控制映射器-->

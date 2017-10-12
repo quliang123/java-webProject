@@ -12,5 +12,10 @@
 </head>
 <body>
    注意路径
-</body>
+<form action="/first" method="post">
+    生日<input name="birthday">
+    年龄<input name="age">
+    <input type="submit" value="提交">
+</form>
+ </body>
 </html>

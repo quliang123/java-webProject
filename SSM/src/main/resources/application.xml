@@ -71,4 +71,6 @@
 
     <!--6.事务-->
     <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
+
+    <context:annotation-config />
 </beans>

@@ -20,7 +20,7 @@
 
     <!--第二种方式-->
     <!--<mvc:default-servlet-handler/>-->
-
+0
     <!--推荐方式 第三种方式   resources标签-->
     <mvc:resources mapping="/img/**" location="/img/"></mvc:resources>
 

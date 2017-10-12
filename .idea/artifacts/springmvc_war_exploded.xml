@@ -2,7 +2,6 @@
   <artifact type="exploded-war" name="springmvc:war exploded">
     <output-path>$PROJECT_DIR$/springmvc/target/springmvc</output-path>
     <root id="root">
-      <element id="module-output" name="springmvc" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="springmvc" />
@@ -82,6 +81,7 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.6.1" />
         </element>
       </element>
+      <element id="module-output" name="springmvc" />
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/springmvc/target/springmvc/META-INF/MANIFEST.MF" />
       </element>

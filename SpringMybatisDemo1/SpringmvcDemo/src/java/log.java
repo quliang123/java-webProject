@@ -1,12 +1,13 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * Created by 123 on 2017/08/19.
  */
 
+
 public class log {
-    @Test
-    public void Test1() {
+    @oneAnno(value = "123")
+     public void Test1() {
 
     }
 }

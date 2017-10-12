@@ -13,11 +13,16 @@
         <module name="NewsManager" />
         <module name="Spring" />
         <module name="springmvc" />
-        <module name="SpringMybatis" />
         <module name="springMybatisTest" />
         <module name="SSM_Project" />
         <module name="Super" />
         <module name="TestGenerator" />
+      </profile>
+      <profile name="Annotation profile for Y2Projects Maven Webapp" enabled="true">
+        <sourceOutputDir name="../springMybatisTest/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../springMybatisTest/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringMybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
