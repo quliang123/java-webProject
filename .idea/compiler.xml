@@ -6,40 +6,57 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ActiveMQ" />
         <module name="blogs" />
+        <module name="Case" />
+        <module name="Dubbo" />
+        <module name="Dubbo_client" />
+        <module name="Dubbo_server" />
+        <module name="FAQsearch" />
+        <module name="gomeTest" />
+        <module name="Lucene" />
         <module name="MyBatis" />
         <module name="mybatisDemo" />
         <module name="MyBatisProject" />
         <module name="NewsManager" />
+        <module name="RentingInformationSystem" />
         <module name="Spring" />
         <module name="springmvc" />
-        <module name="springMybatisTest" />
+        <module name="SpringMybatis" />
         <module name="SSM_Project" />
         <module name="Super" />
         <module name="TestGenerator" />
       </profile>
       <profile name="Annotation profile for Y2Projects Maven Webapp" enabled="true">
-        <sourceOutputDir name="../springMybatisTest/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../springMybatisTest/target/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="../SpringMybatis/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../SpringMybatis/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringMybatis" />
+        <module name="springMybatisTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="ActiveMQ" target="1.8" />
       <module name="blogs" target="1.8" />
+      <module name="Case" target="1.5" />
+      <module name="Demo" target="1.5" />
+      <module name="Dubbo" target="1.5" />
+      <module name="Dubbo_client" target="1.5" />
+      <module name="Dubbo_server" target="1.5" />
+      <module name="FAQsearch" target="1.5" />
+      <module name="gomeTest" target="1.5" />
+      <module name="Lucene" target="1.8" />
       <module name="MyBatis" target="1.8" />
       <module name="mybatisDemo" target="1.8" />
       <module name="MyBatisProject" target="1.8" />
       <module name="NewsManager" target="1.8" />
+      <module name="RentingInformationSystem" target="1.5" />
       <module name="Spring" target="1.8" />
-      <module name="SpringMVC" target="1.8" />
       <module name="springmvc" target="1.8" />
       <module name="SpringMybatis" target="1.8" />
       <module name="springMybatisTest" target="1.8" />
+      <module name="SSM" target="1.5" />
       <module name="SSM_Project" target="1.8" />
       <module name="Super" target="1.8" />
-      <module name="SuperMarket" target="1.8" />
-      <module name="SuperMarkets" target="1.8" />
       <module name="TestGenerator" target="1.8" />
       <module name="Y2Projects" target="1.8" />
     </bytecodeTargetLevel>
