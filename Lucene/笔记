@@ -1,0 +1,83 @@
+Lucene----->全文检索实现产品
+Solr
+ES
+1.索引库------用来维护索引（增删改）根据（算法） 检索索引
+2.创建索引库 10个步骤   实体(属性)---->Document（TextFiled）  IndexWriter .addDocument(doc);
+3.查询 检索 搜索 10个步骤  Document(TextFiled)---->Article（属性）  IndexSearch  QueryParser Query  TopDocs
+----2017年12月6日08:46:18
+1.工具类
+四个类：高度封装了底层的添加，修改，删除，和检索的方式
+1.Configuration：Directory(目录)  Analylizer（分词器）
+
+2.ArticleDocumentUtils
+  A----D
+  D----A
+3. LuceneUtil
+  IndexWriter  形成 ，释放
+  IndexSearcher  检索的-------->IndexReader
+
+4.ArticleDAO 作用
+ 面向用户的高级接口：save  update  delete()   search
+
+-------------------------------------------------------
+2017年12月6日08:58:23
+1.性能优化
+   优化一： 可以进行索引库文件的合并
+      方式一：在索引库文件形成后，进行合并forceMerge(1);
+      方式二：动态合并，工具类
+        LogMergePolicy mergePolicy = new LogByteSizeMergePolicy();
+        //达到3个文件时就和合并 ,当索引库中索引文件数达到3个的时候自动合并
+        mergePolicy.setMergeFactor(3);
+        indexWriterConfig.setMergePolicy(mergePolicy);
+
+    优化二：RAMDirectory  和  FSDirectory   数据 融合 交换
+2.分词
+  一般的分词器(将语句切分成一个一个词语的工具)工作流程
+       1.：标点不要切分
+       2.去除停用词 比如is   a   are   等
+       3.对于英文，转成小写
+
+    自定义自己的词库 ，更改停止词库
+3.高亮
+    HighLighter highlighter=new HighLighter(formatter,scorer);
+    //设置摘要的方法
+    highlighter.setTextFragmenter(fragmenter);
+    highlighter.getBestFragment(分词器,"content","值")
+    ((Field) doc.getField("content")).setStringValue(text);
+4.搜索
+
+
+
+5.排序
+  Lucene 7  物理顺序排序
+  排序规则
+
+ 转化 A-----D
+ 步骤一：document.add(new NumbericDocValus("sortid"),arti.getId());
+ 步骤二：Sort sort=new Sort(new SortFiled("sortid"),INT,true); //倒序输出
+ 步骤三： IndexSearcher.search(query,100,sort);
+
+过滤：Filter
+
+周日上午：开始大数据
+1.带课本，写预习。
+2.大数据饱和的/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

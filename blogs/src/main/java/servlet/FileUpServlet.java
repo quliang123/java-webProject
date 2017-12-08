@@ -122,20 +122,21 @@ public class FileUpServlet extends HttpServlet {
                         System.out.println(fileName);
                         System.out.println(sizeInBytes);
 
-                        InputStream in = item.getInputStream();
-                        byte[] buffer = new byte[1024];
-                        int len = 0;
+                        try (InputStream in = item.getInputStream()) {
+                            byte[] buffer = new byte[1024];
+                            int len = 0;
 
-                        fileName = "D:\\ideaFile\\Y2Projects\\blogs\\src\\main\\webapp\\WEB-INF\\upload\\" + fileName;//文件最终上传的位置
-                        System.out.println(fileName);
-                        OutputStream out = new FileOutputStream(fileName);
+                            fileName = "D:\\ideaFile\\Y2Projects\\blogs\\src\\main\\webapp\\WEB-INF\\upload\\" + fileName;//文件最终上传的位置
+                            System.out.println(fileName);
+                            OutputStream out = new FileOutputStream(fileName);
 
-                        while ((len = in.read(buffer)) != -1) {
-                            out.write(buffer, 0, len);
+                            while ((len = in.read(buffer)) != -1) {
+                                out.write(buffer, 0, len);
+                            }
+
+                            out.close();
+                            in.close();
                         }
-
-                        out.close();
-                        in.close();
                     }
 
 

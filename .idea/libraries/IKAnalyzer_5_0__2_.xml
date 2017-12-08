@@ -1,0 +1,46 @@
+<component name="libraryTable">
+  <library name="IKAnalyzer-5.0 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/IKAnalyzer-5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-analyzers-common-7.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-analyzers-smartcn-7.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-core-7.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-highlighter-7.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-memory-7.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-queryparser-7.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/analyzers-common" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/analyzers-icu" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/analyzers-kuromoji" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/analyzers-morfologik" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/analyzers-phonetic" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/analyzers-smartcn" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/analyzers-stempel" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/analyzers-uima" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/backward-codecs" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/benchmark" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/classification" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/codecs" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/core" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/demo" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/expressions" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/facet" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/grouping" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/highlighter" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/join" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/memory" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/misc" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/queries" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/queryparser" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/replicator" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/sandbox" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/spatial" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/spatial-extras" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/spatial3d" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/suggest" />
+      <root url="jar://$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip!/lucene-7.1.0/docs/test-framework" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

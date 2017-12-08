@@ -8,13 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ActiveMQ" />
         <module name="blogs" />
+        <module name="Bootstrap" />
         <module name="Case" />
         <module name="Dubbo" />
         <module name="Dubbo_client" />
         <module name="Dubbo_server" />
         <module name="FAQsearch" />
         <module name="gomeTest" />
-        <module name="Lucene" />
         <module name="MyBatis" />
         <module name="mybatisDemo" />
         <module name="MyBatisProject" />
@@ -22,22 +22,23 @@
         <module name="RentingInformationSystem" />
         <module name="Spring" />
         <module name="springmvc" />
-        <module name="SpringMybatis" />
+        <module name="springMybatisTest" />
         <module name="SSM_Project" />
         <module name="Super" />
         <module name="TestGenerator" />
       </profile>
       <profile name="Annotation profile for Y2Projects Maven Webapp" enabled="true">
-        <sourceOutputDir name="../SpringMybatis/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../SpringMybatis/target/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="../springMybatisTest/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../springMybatisTest/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springMybatisTest" />
+        <module name="SpringMybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="ActiveMQ" target="1.8" />
       <module name="blogs" target="1.8" />
-      <module name="Case" target="1.5" />
+      <module name="Bootstrap" target="1.8" />
+      <module name="Case" target="1.8" />
       <module name="Demo" target="1.5" />
       <module name="Dubbo" target="1.5" />
       <module name="Dubbo_client" target="1.5" />
