@@ -8,175 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44836ae5-2100-4a61-92ef-dd5838ddb8ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/IK-Analyzer5.0.rar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-7.1.0.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-analyzers-common-7.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-analyzers-smartcn-7.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-core-7.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-highlighter-7.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-memory-7.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/webapp/WEB-INF/lib/lucene-queryparser-7.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ActiveMQ_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ActiveMQ_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Bootstrap_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Bootstrap_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Case_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Case_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Dubbo_client_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Dubbo_client_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Dubbo_server_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Dubbo_server_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Dubbo_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Dubbo_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/FAQsearch_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/FAQsearch_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Lucene_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Lucene_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/IKAnalyzer_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/IKAnalyzer_5_0__2_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__backport_util_concurrent_backport_util_concurrent_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_4_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_15.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_1_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jsr107cache_jsr107cache_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_all_5_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_15.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xbean_xbean_spring_3_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_5_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_0_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_6_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_0_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_1_9_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_0_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_13_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lucene_analyzers_common_7_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ActiveMQ/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ActiveMQ/src/main/java/JmsSeceiver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/Bootstrap.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bootstrap/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/Case.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/BasicsLore/TutorialIO/hh.text" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/BasicsLore/TutorialIO/testInputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/CollectionFramework/CaseSet01/Dog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/CollectionFramework/CaseSet01/tesLinkedHashSet01.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/Utils/ApplicationUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/Utils/CookieUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/Utils/HttpClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/Utils/POIUtils/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/Utils/POIUtils/ColumnName.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/Utils/POIUtils/CreationExecl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/Utils/POIUtils/POITest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/Utils/POIUtils/TestPOI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/Utils/Page.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/Utils/PasswordHash.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/src/main/java/Utils/RedisCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Case/web/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/Demo.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/gomeTest/gomeTest.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/Lucene.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/Case/AnalyzerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/Case/ArticleDAOTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/Case/Case1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/Case/DirectoryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/Case/HelloWorldLucene.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/Case/HighLighterTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/Case/LuceneTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/Case/QueryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/Case/SortTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/Case/TestOptimize.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/Case/testAnalyzer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/day02/HighLighterTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/day03sort/SortTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/day04query/QueryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/entity/Article.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/happy/dao/ArticleDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/happy/entity/Article.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/happy/entity/SearchResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/happy/util/AritcleDocumentUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/happy/util/Configuration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/happy/util/LuceneUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/test/AnalyzerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/test/ArticleDAOTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/test/DirectoryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/test/LuceneTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/src/main/java/test/TestOptimize.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lucene/笔记" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SSM/FAQsearch/FAQsearch.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SSM/RentingInformationSystem/RentingInformationSystem.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SSM/SSM.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/src/main/test/cn/ql/test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java/src/demo1/hh.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NIO￥Socket/NioClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NIO￥Socket/NioServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/javaDemo/nio/nio1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/lambda/lambda1/l1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/Demo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/Mail163Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/MailUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/demo1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/demo2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/mail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/t1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/t2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/t3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/t4.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Spring_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Spring_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/TestGenerator_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/TestGenerator_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/mybatisDemo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/mybatisDemo_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/springMybatisTest_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/springMybatisTest_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/springmvc_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvc_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/Dubbo/Dubbo.iml" afterPath="$PROJECT_DIR$/Demo/Dubbo/Dubbo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/Dubbo_client/Dubbo_client.iml" afterPath="$PROJECT_DIR$/Demo/Dubbo_client/Dubbo_client.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/Dubbo_server/Dubbo_server.iml" afterPath="$PROJECT_DIR$/Demo/Dubbo_server/Dubbo_server.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/Spring.iml" afterPath="$PROJECT_DIR$/Spring/Spring.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringMVC/SpringMVC.iml" afterPath="$PROJECT_DIR$/SpringMVC/SpringMVC.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestGenerator/TestGenerator.iml" afterPath="$PROJECT_DIR$/TestGenerator/TestGenerator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Y2Projects.iml" afterPath="$PROJECT_DIR$/Y2Projects.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogs/src/main/java/servlet/FileUpServlet.java" afterPath="$PROJECT_DIR$/blogs/src/main/java/servlet/FileUpServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mybatisDemo/mybatisDemo.iml" afterPath="$PROJECT_DIR$/mybatisDemo/mybatisDemo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springMybatisTest/springMybatisTest.iml" afterPath="$PROJECT_DIR$/springMybatisTest/springMybatisTest.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -250,8 +82,8 @@
       <file leaf-file-name="POITest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Case/src/main/java/Utils/POIUtils/POITest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="65" />
+            <state relative-caret-position="369">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#541#547#0" expanded="true" />
@@ -1510,7 +1342,7 @@
       <workItem from="1512629676021" duration="5507000" />
       <workItem from="1512694819534" duration="575000" />
       <workItem from="1512705651822" duration="91000" />
-      <workItem from="1512712910208" duration="893000" />
+      <workItem from="1512712910208" duration="1114000" />
     </task>
     <task id="LOCAL-00001" summary="整个y2的所有项目">
       <created>1498269832840</created>
@@ -1638,7 +1470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512349251158</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="2017年12月4日08:59:06&#10;ActiveMQ&#10;Lucene&#10;基础案例&#10;">
+      <created>1512714610101</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1512714610101</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1674,7 +1513,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="793968000" />
+    <option name="totallyTimeSpent" value="794189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1688,7 +1527,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="99" y="88" width="1600" height="948" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.059371363" sideWeight="0.49784482" order="6" side_tool="false" content_ui="tabs" />
@@ -1704,7 +1543,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32712457" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.49568966" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37714663" sideWeight="0.54848045" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37714663" sideWeight="0.54848045" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19552337" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34470752" sideWeight="0.34872612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22975641" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2153,8 +1992,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Case/src/main/java/Utils/POIUtils/POITest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="65" />
+        <state relative-caret-position="369">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#541#547#0" expanded="true" />

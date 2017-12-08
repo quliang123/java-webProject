@@ -43,7 +43,6 @@ public class POITest {
             ColumnName columnName = item.getAnnotation(ColumnName.class);
             String name = columnName.getName();
             System.out.println(name);
-
         }
 
     }
