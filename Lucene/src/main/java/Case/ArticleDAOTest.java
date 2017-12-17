@@ -1,8 +1,8 @@
 package Case;
 
-import cn.happy.dao.ArticleDAO;
-import cn.happy.entity.Article;
-import cn.happy.entity.SearchResult;
+import happy.dao.ArticleDAO;
+import happy.entity.Article;
+import happy.entity.SearchResult;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.junit.Test;
 
@@ -13,6 +13,10 @@ import java.io.IOException;
  */
 public class ArticleDAOTest {
     ArticleDAO articleDAO= new ArticleDAO();
+
+    public ArticleDAOTest() throws IOException {
+    }
+
     @Test
     public void testSave(){
         Article article=new Article();

@@ -1,6 +1,6 @@
 package Case;
 
-import cn.happy.util.LuceneUtil;
+import happy.util.LuceneUtil;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.index.LogByteSizeMergePolicy;
 import org.apache.lucene.index.LogDocMergePolicy;

@@ -6,6 +6,9 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -15,6 +18,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Demo/pom.xml" />
         <option value="$PROJECT_DIR$/Lucene/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatisProject/pom.xml" />

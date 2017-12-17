@@ -1,6 +1,6 @@
 package Case;
 
-import cn.happy.util.Configuration;
+import happy.util.Configuration;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.TextField;

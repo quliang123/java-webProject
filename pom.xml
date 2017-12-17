@@ -8,7 +8,6 @@
     <modules>
         <module>MyBatis</module>
         <module>MyBatisProject</module>
-        <module>MyBatisProject</module>
         <module>MyBatis</module>
         <module>blogs</module>
        <module>Demo</module>
@@ -16,7 +15,6 @@
         <module>SSM</module>
         <module>Super</module>
         <module>mybatisDemo</module>
-        <module>NewsManager</module>
         <module>Spring</module>
         <module>SSM_Project</module>
         <module>SpringMybatis</module>
@@ -26,6 +24,8 @@
         <module>ActiveMQ</module>
         <module>Lucene</module>
         <module>Bootstrap</module>
+        <module>VueJS</module>
+        <module>Hadoop</module>
     </modules>
     <name>Y2Projects Maven Webapp</name>
     <url>http://maven.apache.org</url>
@@ -218,6 +218,16 @@
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
             <version>2.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>2.0.0.RELEASE</version>
         </dependency>
     </dependencies>
 

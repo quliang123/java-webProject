@@ -1,3 +1,4 @@
+/*
 package com.bdqn.util;
 import redis.clients.jedis.*;
 import java.util.ArrayList;
@@ -5,9 +6,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+*/
 /**
  * Created by 123 on 2017/06/19.
- */
+ *//*
+
 
     public class RedisClient {
 
@@ -24,9 +27,11 @@ import java.util.Set;
             jedis = jedisPool.getResource();
         }
 
-        /**
+        */
+/**
          * 初始化非切片池
-         */
+         *//*
+
         private void initialPool()
         {
             // 池基本配置
@@ -39,9 +44,11 @@ import java.util.Set;
             jedisPool = new JedisPool(config,"127.0.0.1",6379);
         }
 
-        /**
+        */
+/**
          * 初始化切片池
-         */
+         *//*
+
         private void initialShardedPool()
         {
             // 池基本配置
@@ -104,10 +111,12 @@ import java.util.Set;
             System.out.println("查看key001的剩余生存时间："+jedis.ttl("key001"));
             // 查看key所储存的值的类型
             System.out.println("查看key所储存的值的类型："+jedis.type("key001"));
-    	        /*
+    	        */
+/*
     	         * 一些其他方法：1、修改键名：jedis.rename("key6", "key0");
     	         *             2、将当前db的key移动到给定的db当中：jedis.move("foo", 1)
-    	         */
+    	         *//*
+
 
         }
 
@@ -139,12 +148,14 @@ import java.util.Set;
             System.out.println("获取key002对应的新值"+jedis.get("key002"));
 
             System.out.println("=============增，删，查（多个）=============");
-            /**
+            */
+/**
              * mset,mget同时新增，修改，查询多个键值对
              * 等价于：
              * jedis.set("name","ssss");
              * jedis.set("jarorwar","xxxx");
-             */
+             *//*
+
             System.out.println("一次性新增key201,key202,key203,key204及其对应值："+jedis.mset("key201","value201",
                     "key202","value202","key203","value203","key204","value204"));
             System.out.println("一次性获取key201,key202,key203,key204各自对应的值："+
@@ -228,10 +239,12 @@ import java.util.Set;
             System.out.println("长度-stringlists："+shardedJedis.llen("stringlists"));
             System.out.println("长度-numberlists："+shardedJedis.llen("numberlists"));
             // 排序
-        /*
+        */
+/*
          * list中存字符串时必须指定参数为alpha，如果不使用SortingParams，而是直接使用sort("list")，
          * 会出现"ERR One or more scores can't be converted into double"
-         */
+         *//*
+
             SortingParams sortingParameters = new SortingParams();
             sortingParameters.alpha();
             sortingParameters.limit(0, 3);
@@ -261,8 +274,10 @@ import java.util.Set;
             System.out.println("=============删=============");
             System.out.println("集合sets中删除元素element003："+jedis.srem("sets", "element003"));
             System.out.println("查看sets集合中的所有元素:"+jedis.smembers("sets"));
-        /*System.out.println("sets集合中任意位置的元素出栈："+jedis.spop("sets"));//注：出栈元素位置居然不定？--无实际意义
-        System.out.println("查看sets集合中的所有元素:"+jedis.smembers("sets"));*/
+        */
+/*System.out.println("sets集合中任意位置的元素出栈："+jedis.spop("sets"));//注：出栈元素位置居然不定？--无实际意义
+        System.out.println("查看sets集合中的所有元素:"+jedis.smembers("sets"));*//*
+
             System.out.println();
 
             System.out.println("=============改=============");
@@ -359,3 +374,4 @@ import java.util.Set;
         }
     }
 
+*/

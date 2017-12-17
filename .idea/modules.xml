@@ -5,11 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" filepath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bootstrap/Bootstrap.iml" filepath="$PROJECT_DIR$/Bootstrap/Bootstrap.iml" />
       <module fileurl="file://$PROJECT_DIR$/Case/Case.iml" filepath="$PROJECT_DIR$/Case/Case.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Demo/Demo.iml" filepath="$PROJECT_DIR$/Demo/Demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Demo/Dubbo/Dubbo.iml" filepath="$PROJECT_DIR$/Demo/Dubbo/Dubbo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Demo/Dubbo_client/Dubbo_client.iml" filepath="$PROJECT_DIR$/Demo/Dubbo_client/Dubbo_client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Demo/Dubbo_server/Dubbo_server.iml" filepath="$PROJECT_DIR$/Demo/Dubbo_server/Dubbo_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSM/FAQsearch/FAQsearch.iml" filepath="$PROJECT_DIR$/SSM/FAQsearch/FAQsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hadoop/Hadoop.iml" filepath="$PROJECT_DIR$/Hadoop/Hadoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatisProject/MyBatisProject.iml" filepath="$PROJECT_DIR$/MyBatisProject/MyBatisProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/NewsManager/NewsManager.iml" filepath="$PROJECT_DIR$/NewsManager/NewsManager.iml" />
@@ -20,9 +17,9 @@
       <module fileurl="file://$PROJECT_DIR$/SpringMybatis/SpringMybatis.iml" filepath="$PROJECT_DIR$/SpringMybatis/SpringMybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Super/Super.iml" filepath="$PROJECT_DIR$/Super/Super.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestGenerator/TestGenerator.iml" filepath="$PROJECT_DIR$/TestGenerator/TestGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VueJS/VueJS.iml" filepath="$PROJECT_DIR$/VueJS/VueJS.iml" />
       <module fileurl="file://$PROJECT_DIR$/Y2Projects.iml" filepath="$PROJECT_DIR$/Y2Projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/blogs/blogs.iml" filepath="$PROJECT_DIR$/blogs/blogs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Demo/gomeTest/gomeTest.iml" filepath="$PROJECT_DIR$/Demo/gomeTest/gomeTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisDemo/mybatisDemo.iml" filepath="$PROJECT_DIR$/mybatisDemo/mybatisDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springMybatisTest/springMybatisTest.iml" filepath="$PROJECT_DIR$/springMybatisTest/springMybatisTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc/springmvc.iml" filepath="$PROJECT_DIR$/springmvc/springmvc.iml" />

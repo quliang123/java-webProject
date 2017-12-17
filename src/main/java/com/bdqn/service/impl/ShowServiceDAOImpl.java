@@ -3,7 +3,6 @@ package com.bdqn.service.impl;
 import com.bdqn.dao.IShowDAO;
 import com.bdqn.dao.impl.ShowDAOimpl;
 import com.bdqn.service.IShowServiceDAO;
-import com.bdqn.util.RedisClient;
 import com.google.gson.Gson;
 
 import java.sql.SQLException;
@@ -14,7 +13,11 @@ import java.util.List;
  */
 
 public class ShowServiceDAOImpl implements IShowServiceDAO {
-    ShowDAOimpl impl = new ShowDAOimpl();
+    @Override
+    public String show(String name, String type, int pageindex, int pagesize) throws SQLException, ClassNotFoundException {
+        return null;
+    }
+   /* ShowDAOimpl impl = new ShowDAOimpl();
     RedisClient redisClient = new RedisClient();
 
     public String show(String name, String type, int pageindex, int pagesize) throws SQLException, ClassNotFoundException {
@@ -27,5 +30,5 @@ public class ShowServiceDAOImpl implements IShowServiceDAO {
         }
         System.out.println("取到了数据");
         return redisClient.jedis.get( "ConditionalPaging" );
-    }
+    }*/
 }

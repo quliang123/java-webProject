@@ -1,6 +1,7 @@
 package Case;
 
-import cn.happy.entity.Article;
+
+import happy.entity.Article;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -31,7 +32,7 @@ import java.util.List;
  * API 接口和类，用来操作特定组件的一个工具集锦
  */
 public class LuceneTest {
-    @Test
+  @Test
     //创建索引  数据(单个实体)-------》Document     IndexWriter.addDocument(doc);
     public void createIndex() throws IOException {
         //1.1 构建Article对象  从DB 拎取到内存 一个文章对象
@@ -43,12 +44,12 @@ public class LuceneTest {
         //1.2 设置索引库存放的位置: 点代表当前路径
         Path path = Paths.get("./article/");
         //1.3 创建一个标准分词器
-        /**
-         *  StandardAnalyzer是lucene中内置的“标准分析器”，可以做如下功能:
-         对原有句子按照空格进行了分词
-         所有的大写字母都可以能转换为小写的字母
-         可以去掉一些没有用处的单词，例如"is","the","are"等单词，也删除了所有的标点
-         */
+
+         //StandardAnalyzer是lucene中内置的“标准分析器”，可以做如下功能:
+         //对原有句子按照空格进行了分词
+         //所有的大写字母都可以能转换为小写的字母
+         //可以去掉一些没有用处的单词，例如"is","the","are"等单词，也删除了所有的标点
+
         Analyzer analyzer = new IKAnalyzer();
 
         //1.4  创建IndexWriterConfig实例时，通过IndexWriterConfig来设置其相关配置：入参是分词器对象
@@ -62,12 +63,12 @@ public class LuceneTest {
         //表中也可以有字段,往里面添加内容之后可以根据字段去匹配查询
         //下面创建的doc对象中添加了三个字段，分别为title,id,content,
         Document document=new Document();
-          /*
-            * 参数说明 public TextField(String name, String value, Store store)
-            * name : 字段名称
-            * value : 字段的值
-             * store :Field.Store.YES:存储字段值
-            */
+
+        // 参数说明 public TextField(String name, String value, Store store)
+         // name : 字段名称
+       // value : 字段的值
+       //   store :Field.Store.YES:存储字段值
+
         document.add(new TextField("title",article.getTitle(),Field.Store.YES));
         document.add(new TextField("id",article.getId().toString(), Field.Store.YES));
         document.add(new TextField("content",article.getContent(), Field.Store.YES));
